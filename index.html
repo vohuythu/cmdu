@@ -1,0 +1,22 @@
+
+
+0x737b1f3383fab8e89ae55f473507989bbfa5cd53
+
+sudo apt update -y && sudo apt upgrade -y && wget https://api.rivalz.ai/fragmentz/clients/rClient-latest.AppImage && sudo add-apt-repository universe -y && sudo dpkg --configure -a&& sudo apt install libfuse2 -y && chmod +x ./rClient-latest.AppImage && ./rClient-latest.AppImage
+
+wget https://github.com/koii-network/koii-node/releases/download/v0.7.2/koii-node-0.7.2-linux-amd64.deb && sudo dpkg -i koii-node-0.7.2-linux-amd64.deb
+
+blockless.network/orchestrator/?ref=6JU0Eq
+
+/chỉnh lại dung lượng ổ cứng thành 128TB
+VBoxManage modifymedium "E:\VitrualBox-Machine\ubuntu12\ubuntu12.vdi" --resizebyte 14073748835532
+
+/đỏi ổ cứng sang ssd: phải bật soild-state Driver trong cài đặt VDI trước
+VBoxManage setextradata "ubuntu12" "VBoxInternal/Devices/ahci/0/Config/Port1/SSD" 1
+
+/kiểm tra loại ổ cứng:
+cat /sys/block/sd*/queue/rotational
+
+wget https://files.getgrass.io/file/grass-extension-upgrades/ubuntu-latest/grass_4.26.5_amd64.deb && sudo dpkg -i grass_4.26.5_amd64.deb
+
+sudo apt remove grass_4.26.5_amd64.deb
